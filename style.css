@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  padding: 0px 10px;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .container .logo-container {
+  padding: 0px 20px;
+}
+
+nav .container .logo-container a {
+  text-decoration: none;
+}
+nav .container .logo-container .icon-1 {
+  font: 600 24px Arial;
+  color: #fb923c;
+}
+nav .container .logo-container .icon-2 {
+  font: 600 24px Arial;
+  color: #60a5fa;
+}
+
+nav .container .hamburger-menu {
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+nav .container .menu-container {
+  display: flex;
+}
+
+nav .container .menu-container ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav .container .menu-container ul a {
+  text-decoration: none;
+  padding: 22px 30px;
+}
+nav .container .menu-container ul a:hover {
+  text-decoration: none;
+  padding: 22px 30px;
+  background-color: rgba(156, 156, 156, 0.418);
+}
+nav .container .menu-container ul a li {
+  font: 600 16px Arial;
+  color: rgb(255, 255, 255);
+}
+
+nav .container .menu-container ul a:hover li {
+  font: 600 16px Arial;
+  color: #fb923c;
+}
+
+nav .container .socialmedia-container {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .container .socialmedia-container a,
+nav .container .socialmedia-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+
+nav .container .socialmedia-container a .youtube-icon .ph,
+nav .container .socialmedia-container a .github-icon .ph {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    padding: 12px;
+  }
+  nav .container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  nav .container .menu-container {
+    width: 100%;
+    justify-content: center;
+  }
+  nav .container .hamburger-menu {
+    display: flex;
+  }
+  nav .container .menu-container,
+  nav .container .socialmedia-container {
+    display: none;
+  }
+  nav .container .menu-container .menu-bar ul {
+    flex-direction: column;
+  }
+  nav .container .menu-container .menu-bar ul a {
+    margin: 10px auto;
+  }
+  nav .container .menu-container .menu-bar ul a li {
+    margin: auto;
+  }
+
+  nav .container .socialmedia-container {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  nav .container .socialmedia-container .youtube-icon .ph,
+  nav .container .socialmedia-container .github-icon .ph {
+    font-size: 36px;
+  }
+
+  nav .container .hidden {
+    display: flex;
+  }
+  nav .container .hamburger-menu:hover {
+    color: #fb923c;
+    font-size: 20px;
+  }
+}
