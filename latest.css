@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(15, 23, 42);
+}
+
+.fmain {
+  background-color: rgb(15, 23, 42);
+  height: 100vh;
+}
+.fmain a {
+  text-decoration: none;
+}
+
+.main {
+  background-color: rgb(32, 36, 52);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: left;
+}
+hr {
+  color: white;
+  margin: 15px;
+}
+.isi-1 {
+  width: 700px;
+}
+.isi-1 span {
+  color: #fb923c;
+  font-size: 28px;
+}
+.isi-2 p {
+  color: rgb(174, 189, 211);
+  font-size: 16px;
+}
+.main img {
+  width: 100px;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  .fmain a .main {
+    background-color: rgb(32, 36, 52);
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+  }
+  .fmain a .main img {
+    width: 100px;
+    height: 100px;
+  }
+  .fmain a .main .isi-1 {
+    width: 600px;
+    height: 100px;
+  }
+  .fmain a .main .isi-1 span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .fmain a .main .isi-1 .isi-2 p {
+    font-size: 10px;
+    padding-top: 4px;
+  }
+  br {
+    display: none;
+  }
+}

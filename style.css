@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 nav {
@@ -53,6 +54,8 @@ nav .container .menu-container ul {
 nav .container .menu-container ul a {
   text-decoration: none;
   padding: 22px 30px;
+  transition: all;
+  transition-duration: 300ms;
 }
 nav .container .menu-container ul a:hover {
   text-decoration: none;
@@ -61,7 +64,7 @@ nav .container .menu-container ul a:hover {
 }
 nav .container .menu-container ul a li {
   font: 600 16px Arial;
-  color: rgb(255, 255, 255);
+  color: rgba(148, 163, 184);
 }
 
 nav .container .menu-container ul a:hover li {
@@ -136,4 +139,175 @@ nav .container .socialmedia-container a .github-icon .ph {
     color: #fb923c;
     font-size: 20px;
   }
+
+  /* MAIN */
+
+  body main {
+    background-color: rgb(15, 23, 42);
+  }
+
+  main .main-container {
+    width: 100%;
+  }
+  main .main-container .header-main {
+    padding-top: 50px;
+  }
+
+  .main-container .header-main h2 {
+    display: flex;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 600;
+  }
+  main .main-container .writer-main {
+    display: flex;
+    justify-content: center;
+  }
+  main .main-container .writer-main .writer {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+  }
+  main .main-container .writer-main .writer span {
+    font-size: 13px;
+  }
+
+  main .main-container .isi {
+    background-color: rgb(32, 36, 52);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  main .main-container .isi .image-main {
+    display: flex;
+    padding: 0px 0px;
+  }
+
+  .image-main img {
+    width: 150px;
+    height: 200px;
+    margin: auto;
+  }
+
+  main .main-container .isi .content-paragraph {
+  }
+  main .main-container .isi {
+  }
+  .main-container .isi .content-paragraph {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  main .main-container .isi .content-paragraph .paragraph {
+    background-color: rgb(40, 44, 68);
+    border-radius: 6px;
+    width: 90%;
+  }
+  main .main-container .isi .content-paragraph .paragraph h2 {
+    color: #fb923c;
+    text-align: center;
+    font-size: 24px;
+  }
+  main .main-container .isi .content-paragraph .paragraph p {
+    color: rgba(148, 163, 184);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+main {
+  background-color: rgb(15, 23, 42);
+}
+
+.main-container {
+  width: 100%;
+}
+.header-main {
+  display: flex;
+  justify-content: center;
+}
+
+.header-main h2 {
+  color: #fb923c;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.writer-main {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.writer-main .writer span {
+  color: aliceblue;
+}
+
+.isi {
+  background-color: rgb(32, 36, 52);
+  border-radius: 8px;
+  padding: 40px 20px;
+}
+.image-main {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.image-main img {
+  padding: 2px;
+  margin: auto;
+}
+
+.content {
+  padding: 10px 0px 30px 0px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content-paragraph {
+  display: flex;
+
+  justify-content: center;
+}
+
+.content-paragraph .paragraph {
+  border: 2px solid white;
+  background-color: rgb(40, 44, 68);
+  border-radius: 6px;
+  padding: 10px;
+  width: 50%;
+}
+.content-paragraph .paragraph h2 {
+  color: #fb923c;
+  text-align: center;
+  padding: 10px 0px 40px 0px;
+  font-size: 24px;
+}
+.content-paragraph .paragraph p {
+  color: rgba(148, 163, 184);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 5px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+footer .footer-container span,
+footer .footer-container .ph {
+  color: aliceblue;
+  font-size: 25px;
+  padding-left: 5px;
 }
