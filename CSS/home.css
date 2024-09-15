@@ -192,7 +192,7 @@ main {
 
   .content-2 {
     display: flex;
-    flex-direction: column;
+
     margin-top: 30px;
     gap: 1rem;
     padding: 16px 0px 0px 18px;
@@ -207,6 +207,22 @@ main {
   .content-2 .head .ph {
     color: white;
     font-size: 26px;
+  }
+
+  .content-2 a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    background-color: rgba(147, 149, 153, 0.226);
+    border: 2px solid white;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 300ms;
   }
   .content-2 a:hover {
     display: flex;
@@ -226,7 +242,6 @@ main {
   .content-2 a .items {
     display: flex;
     gap: 1rem;
-    width: 50%;
   }
   .content-2 span {
     font-weight: 600;
@@ -243,15 +258,16 @@ main {
   }
   .content-2 .items span {
     color: #fb923c;
-    font-size: 16px;
+    font-size: 13px;
   }
   .content-2 .items p {
     color: #9b9692;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 600;
   }
   .content-2 a img {
     width: 50%;
+    height: 30%;
     border-radius: 5px;
   }
 }
