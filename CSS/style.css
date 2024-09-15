@@ -25,6 +25,11 @@ nav .container .logo-container {
 
 nav .container .logo-container a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav .container .logo-container img {
+  margin-bottom: 8px;
 }
 nav .container .logo-container .icon-1 {
   font: 600 24px Arial;

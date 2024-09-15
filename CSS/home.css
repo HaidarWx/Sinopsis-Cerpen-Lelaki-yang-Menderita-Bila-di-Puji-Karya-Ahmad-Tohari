@@ -8,9 +8,10 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 4fr 3.5fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 2fr;
 }
+
 .content-1 a {
   text-decoration: none;
   color: aliceblue;
@@ -64,12 +65,10 @@ main {
 .content-2 {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 0px;
   gap: 1rem;
   padding: 16px 0px 0px 18px;
-  height: auto;
-  width: 600px;
-  background-color: rgb(32, 36, 52);
+  width: 95%;
 }
 
 .content-2 .head {
@@ -84,32 +83,35 @@ main {
 .content-2 a {
   display: flex;
   justify-content: start;
-  width: 500px;
-  height: 100px;
+  width: 100%;
+  height: 30%;
   padding: 10px;
   border-radius: 5px;
   background-color: rgb(15, 23, 42);
   border: 2px solid white;
   text-decoration: none;
-  margin-left: 40px;
   transition: all;
   transition-duration: 300ms;
 }
 .content-2 a:hover {
   display: flex;
   justify-content: start;
-  width: 500px;
-  height: 100px;
+  width: 100%;
+  height: 30%;
   padding: 10px;
+  margin-left: 20px;
   border-radius: 5px;
-  background-color: rgba(175, 180, 192, 0.219);
+  background-color: rgba(147, 149, 153, 0.226);
   border: 2px solid white;
   text-decoration: none;
-  margin-left: 40px;
+
+  transition: all;
+  transition-duration: 300ms;
 }
 .content-2 a .items {
   display: flex;
   gap: 1rem;
+  width: 65%;
 }
 .content-2 span {
   font-weight: 600;
@@ -119,6 +121,7 @@ main {
 .content-2 .items {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .content-2 .items h6 {
   color: white;
@@ -127,6 +130,15 @@ main {
 .content-2 .items span {
   color: #fb923c;
   font-size: 18px;
+}
+.content-2 .items p {
+  color: #9b9692;
+  font-size: 12px;
+  font-weight: 600;
+}
+.content-2 a img {
+  width: 40%;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 768px) {
   main {
@@ -182,7 +194,9 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    width: 100%;
+    gap: 1rem;
+    padding: 16px 0px 0px 18px;
+    width: 95%;
     background-color: rgb(32, 36, 52);
   }
   .content-2 .head {
@@ -194,33 +208,25 @@ main {
     color: white;
     font-size: 26px;
   }
-  .content-2 a {
-    display: flex;
-    justify-content: start;
-    width: 95%;
-    height: 100px;
-    border-radius: 5px;
-    background-color: rgb(15, 23, 42);
-    border: 2px solid white;
-    text-decoration: none;
-    margin: 0px;
-    transition: all;
-    transition-duration: 300ms;
-  }
   .content-2 a:hover {
     display: flex;
     justify-content: start;
-    width: 95%;
-    height: 100px;
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    margin-left: 0px;
     border-radius: 5px;
-    background-color: rgba(178, 180, 185, 0.432);
+    background-color: rgba(147, 149, 153, 0.226);
     border: 2px solid white;
     text-decoration: none;
-    margin: 0px;
+    transition: all;
+    transition-duration: 300ms;
   }
+
   .content-2 a .items {
     display: flex;
     gap: 1rem;
+    width: 50%;
   }
   .content-2 span {
     font-weight: 600;
@@ -237,6 +243,15 @@ main {
   }
   .content-2 .items span {
     color: #fb923c;
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .content-2 .items p {
+    color: #9b9692;
+    font-size: 9px;
+    font-weight: 600;
+  }
+  .content-2 a img {
+    width: 50%;
+    border-radius: 5px;
   }
 }
