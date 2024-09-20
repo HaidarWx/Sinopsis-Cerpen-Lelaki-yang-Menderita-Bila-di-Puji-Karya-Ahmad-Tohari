@@ -10,6 +10,7 @@ main {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 2fr;
+  background-color: #333;
 }
 
 .content-1 a {
@@ -19,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  margin: 40px auto;
+  margin: 80px auto;
   background-color: rgb(32, 36, 52);
   transition: all;
   transition-duration: 300ms;
@@ -32,7 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  margin: 40px auto;
+  margin: 80px auto;
   background-color: rgba(158, 162, 179, 0.192);
 }
 
@@ -84,7 +85,6 @@ main {
   display: flex;
   justify-content: start;
   width: 100%;
-  height: 30%;
   padding: 10px;
   border-radius: 5px;
   background-color: rgb(15, 23, 42);
@@ -97,14 +97,12 @@ main {
   display: flex;
   justify-content: start;
   width: 100%;
-  height: 30%;
   padding: 10px;
   margin-left: 20px;
   border-radius: 5px;
   background-color: rgba(147, 149, 153, 0.226);
   border: 2px solid white;
   text-decoration: none;
-
   transition: all;
   transition-duration: 300ms;
 }
@@ -192,11 +190,10 @@ main {
 
   .content-2 {
     display: flex;
-
     margin-top: 30px;
     gap: 1rem;
     padding: 16px 0px 0px 18px;
-    width: 95%;
+    width: 99%;
     background-color: rgb(32, 36, 52);
   }
   .content-2 .head {
@@ -212,10 +209,10 @@ main {
   .content-2 a {
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 100%;
-    height: 10%;
-    padding: 10px;
+    justify-content: center;
+    width: 95%;
+    height: 80%;
+    padding: 0px;
     margin-left: 0px;
     border-radius: 5px;
     background-color: rgba(147, 149, 153, 0.226);
@@ -223,13 +220,14 @@ main {
     text-decoration: none;
     transition: all;
     transition-duration: 300ms;
+    gap: 0.5rem;
   }
   .content-2 a:hover {
     display: flex;
     justify-content: start;
     width: 100%;
-    height: 30%;
-    padding: 10px;
+    height: 150px;
+    padding: 0px;
     margin-left: 0px;
     border-radius: 5px;
     background-color: rgba(147, 149, 153, 0.226);
@@ -237,11 +235,13 @@ main {
     text-decoration: none;
     transition: all;
     transition-duration: 300ms;
+    gap: 0.5rem;
   }
 
   .content-2 a .items {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin: 5px;
   }
   .content-2 span {
     font-weight: 600;
@@ -254,11 +254,11 @@ main {
   }
   .content-2 .items h6 {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
   }
   .content-2 .items span {
     color: #fb923c;
-    font-size: 13px;
+    font-size: 10px;
   }
   .content-2 .items p {
     color: #9b9692;
@@ -267,7 +267,7 @@ main {
   }
   .content-2 a img {
     width: 50%;
-    height: 30%;
+    height: 100%;
     border-radius: 5px;
   }
 }
