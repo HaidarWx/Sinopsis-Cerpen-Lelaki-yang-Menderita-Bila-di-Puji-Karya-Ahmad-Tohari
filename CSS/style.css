@@ -148,7 +148,7 @@ nav .container .socialmedia-container a .github-icon .ph {
   /* MAIN */
 
   body main {
-    background-color: rgb(15, 23, 42);
+    background-color: rgb(255, 255, 255);
   }
 
   main .main-container {
@@ -178,7 +178,7 @@ nav .container .socialmedia-container a .github-icon .ph {
   }
 
   main .main-container .isi {
-    background-color: rgb(32, 36, 52);
+    background-color: #fafafa;
     border-radius: 8px;
     padding: 10px;
   }
@@ -193,10 +193,6 @@ nav .container .socialmedia-container a .github-icon .ph {
     margin: auto;
   }
 
-  main .main-container .isi .content-paragraph {
-  }
-  main .main-container .isi {
-  }
   .main-container .isi .content-paragraph {
     display: flex;
     justify-content: center;
@@ -204,7 +200,7 @@ nav .container .socialmedia-container a .github-icon .ph {
   }
 
   main .main-container .isi .content-paragraph .paragraph {
-    background-color: rgb(40, 44, 68);
+    background-color: rgb(231, 233, 240);
     border-radius: 6px;
     width: 90%;
   }
@@ -214,7 +210,7 @@ nav .container .socialmedia-container a .github-icon .ph {
     font-size: 24px;
   }
   main .main-container .isi .content-paragraph .paragraph p {
-    color: rgba(148, 163, 184);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 400;
     text-align: center;
@@ -223,7 +219,7 @@ nav .container .socialmedia-container a .github-icon .ph {
 }
 
 main {
-  background-color: rgb(15, 23, 42);
+  background-color: rgb(255, 255, 255);
 }
 
 .main-container {
@@ -247,11 +243,11 @@ main {
 }
 
 .writer-main .writer span {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 .isi {
-  background-color: rgb(32, 36, 52);
+  background-color: #fafafa;
   border-radius: 8px;
   padding: 40px 20px;
 }
@@ -280,7 +276,7 @@ main {
 
 .content-paragraph .paragraph {
   border: 2px solid white;
-  background-color: rgb(40, 44, 68);
+  background-color: rgb(249, 250, 255);
   border-radius: 6px;
   padding: 10px;
   width: 50%;
@@ -300,7 +296,7 @@ main {
 }
 
 footer {
-  background-color: black;
+  background-color: #cecece;
 }
 
 footer .footer-container {
@@ -312,7 +308,7 @@ footer .footer-container {
 
 footer .footer-container span,
 footer .footer-container .ph {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-size: 25px;
   padding-left: 5px;
 }

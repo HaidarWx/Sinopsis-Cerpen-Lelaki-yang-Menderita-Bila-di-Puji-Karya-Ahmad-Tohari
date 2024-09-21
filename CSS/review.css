@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(15, 23, 42);
+  background-color: rgb(255, 255, 255);
 }
 
 .page-not-found {
-  background-color: rgb(15, 23, 42);
+  background-color: #fafafa;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .page-not-found .page-container {
-  background-color: rgb(32, 36, 52);
+  background-color: #ecebeb;
   border-radius: 5px;
   padding: 70px;
 }
@@ -28,16 +28,16 @@ body {
 .page-not-found .page-container span {
   font-size: 28px;
   font-weight: 700;
-  color: rgb(174, 189, 211);
+  color: rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 768px) {
   footer .page-not-found {
-    background-color: rgb(15, 23, 42);
+    background-color: rgb(255, 255, 255);
     display: inline-block;
   }
   .page-container {
-    background-color: rgb(32, 36, 52);
+    background-color: #fafafa;
     border-radius: 5px;
     margin: 10px;
     display: flex;
@@ -51,7 +51,7 @@ body {
     margin: auto;
     font-size: 18px;
     font-weight: 700;
-    color: rgb(174, 189, 211);
+    color: rgb(0, 0, 0);
   }
   footer .page-not-found .page-container .page {
     display: flex;

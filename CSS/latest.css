@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(15, 23, 42);
+  background-color: rgb(255, 255, 255);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,23 +12,25 @@ main a {
   text-decoration: none;
   color: aliceblue;
   margin: 10px 0px;
+  background-color: #ffffff;
 }
 .containers {
   border-radius: 5px;
   width: 98%;
   padding: 9px;
   display: flex;
-  background-color: rgb(32, 36, 52);
+  background-color: #fafafa;
   gap: 1rem;
   transition: all;
   transition-duration: 300ms;
+  box-shadow: 7px 12px 12px rgba(0, 0, 0, 0.053);
 }
 .containers:hover {
   border-radius: 5px;
   width: 98%;
   padding: 9px;
   display: flex;
-  background-color: rgba(177, 178, 184, 0.336);
+  background-color: rgba(163, 163, 163, 0.336);
   gap: 1rem;
   transition: all;
   transition-duration: 300ms;
@@ -39,8 +41,17 @@ main a {
   gap: 5px;
 }
 
+.keterangan {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.keterangan h2,
+.keterangan p {
+  color: black;
+}
 hr {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 .containers img {
   width: 100px;
@@ -65,7 +76,7 @@ hr {
     width: 98%;
     padding: 9px;
     display: flex;
-    background-color: rgb(32, 36, 52);
+    background-color: #fafafa;
     gap: 1rem;
     transition: all;
     transition-duration: 300ms;
@@ -78,7 +89,7 @@ hr {
     width: 98%;
     padding: 9px;
     display: flex;
-    background-color: rgba(188, 189, 194, 0.377);
+    background-color: rgba(188, 189, 194, 0.247);
     gap: 1rem;
     transition: all;
     transition-duration: 300ms;
