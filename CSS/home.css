@@ -220,6 +220,9 @@
     margin-bottom: 10px;
     box-shadow: 7px 12px 12px rgba(0, 0, 0, 0.053);
   }
+  .content-2 .card-content-2:hover {
+    margin-left: 10px;
+  }
   .content-2 .card-content-2 .content-2-isi {
     display: flex;
     flex-direction: column;
