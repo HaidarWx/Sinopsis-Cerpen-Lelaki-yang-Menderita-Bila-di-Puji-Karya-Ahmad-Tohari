@@ -60,7 +60,7 @@ nav .container .menu-container ul a {
   text-decoration: none;
   padding: 22px 30px;
   transition: all;
-  transition-duration: 300ms;
+  transition-duration: 400ms;
 }
 nav .container .menu-container ul a:hover {
   text-decoration: none;
