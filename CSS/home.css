@@ -40,7 +40,7 @@
   flex-direction: column;
   width: 100%;
   padding: 5px 20px;
-  gap: 0.5rem;
+  gap: 1rem;
   border-radius: 2cm;
 }
 .content-1 .content-1-isi span {
@@ -162,6 +162,7 @@
     margin-top: 30px;
     grid-template-columns: auto;
     grid-template-rows: 2fr;
+    row-gap: 5%;
   }
 
   .main .container .content-1 {
@@ -220,6 +221,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     gap: 1rem;
   }
 
@@ -230,11 +232,20 @@
     display: flex;
     text-decoration: none;
     border-radius: 2.5px;
-    margin-bottom: 10px;
     box-shadow: 7px 12px 12px rgba(0, 0, 0, 0.053);
+    margin: 0px auto 0px auto;
+    transition: all;
+    transition-duration: 300ms;
   }
   .content-2 .card-content-2:hover {
-    margin-left: 10px;
+    background-color: #fafafa;
+    height: 5rem;
+    width: 90%;
+    display: flex;
+    text-decoration: none;
+    border-radius: 2.5px;
+    box-shadow: 7px 12px 12px rgba(0, 0, 0, 0.053);
+    margin: 0px 10px 0px auto;
   }
   .content-2 .card-content-2 .content-2-isi {
     display: flex;
