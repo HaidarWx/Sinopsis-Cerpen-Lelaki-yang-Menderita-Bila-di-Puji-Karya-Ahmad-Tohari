@@ -148,7 +148,7 @@
 
 footer {
   background-color: white;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 footer .container {
