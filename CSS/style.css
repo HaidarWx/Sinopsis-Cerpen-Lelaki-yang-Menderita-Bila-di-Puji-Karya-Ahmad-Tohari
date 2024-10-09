@@ -100,6 +100,8 @@ nav .container .socialmedia-container a .github-icon .ph {
   nav {
     width: 100%;
     padding: 12px;
+
+    top: 0;
   }
   nav .container {
     justify-content: space-between;
