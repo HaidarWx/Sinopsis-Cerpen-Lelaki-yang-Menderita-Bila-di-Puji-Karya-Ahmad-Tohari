@@ -1,0 +1,208 @@
+.main-fcontainer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 90% auto;
+}
+
+.main-fcontainer .container-isi {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: 50%;
+  margin: 30px auto;
+  column-gap: 5rem;
+}
+
+.main-fcontainer .container-isi .isi-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-fcontainer .container-isi .isi-container .isi-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-fcontainer .container-isi .isi-container .isi-meta .isi-meta-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-fcontainer
+  .container-isi
+  .isi-container
+  .isi-meta
+  .isi-meta-left
+  .isi-meta-author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main-fcontainer
+  .container-isi
+  .isi-container
+  .isi-meta
+  .isi-meta-left
+  .isi-meta-time,
+.isi-meta-category {
+  display: flex;
+  align-items: end;
+}
+
+.isi-container .isi-head h1 {
+}
+
+.isi-meta-left .isi-meta-author img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.isi-meta-left .isi-meta-author span a {
+  text-decoration: none;
+  color: #fb923c;
+  font-weight: bold;
+}
+.isi-meta-left .isi-meta-author span,
+.isi-meta-time span,
+.isi-meta-category span {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #a0a0a0;
+}
+.isi-meta-category span a {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+.main-fcontainer .container-isi .isi-container .isi-meta-right .ph {
+  color: #fb923c;
+  width: 18px;
+  height: 18px;
+  font-weight: bold;
+}
+.main-fcontainer .container-isi .isi-container .isi-meta-right a {
+  text-decoration: none;
+  color: #8b8b8d;
+  font-size: 18px;
+}
+.isi-container .isi-konten {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.isi-container .isi-konten p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 500;
+  font-family: "Segoe UI", sans-serif;
+}
+.main-fcontainer .container-isi .isi-right .isi-right-heading {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 1rem;
+}
+.main-fcontainer .container-isi .isi-right .isi-right-heading .ph,
+.main-fcontainer .container-isi .isi-right .isi-right-heading span {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.main-fcontainer .container-isi .isi-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-fcontainer .container-isi .isi-right .content-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-fcontainer .container-isi .isi-right .content-isi .content-isi-1 {
+  display: flex;
+  gap: 1rem;
+}
+.main-fcontainer
+  .container-isi
+  .isi-right
+  .content-isi
+  .content-isi-1
+  .content-isi-1-head {
+  display: flex;
+  width: 225px;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content-isi-1 .content-isi-1-head .content-isi-1-header a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+.content-isi-1 .content-isi-1-head .content-isi-1-header {
+  width: 230px;
+  height: auto;
+}
+.main-fcontainer .container-isi .isi-right .content-isi .content-isi-1 {
+  display: flex;
+  width: 345px;
+  height: auto;
+}
+.main-fcontainer
+  .container-isi
+  .isi-right
+  .content-isi
+  .content-isi-1
+  .analitic {
+  display: flex;
+  gap: 5px;
+}
+.main-fcontainer .container-isi .isi-right .content-isi .content-isi-1 a {
+  width: 55%;
+}
+.main-fcontainer .container-isi .isi-right .content-isi .content-isi-1 a img {
+  width: 120px;
+  height: 85.8px;
+  border-radius: 5px;
+}
+
+.main-fcontainer
+  .container-isi
+  .isi-right
+  .content-isi
+  .content-isi-1
+  .content-isi-1-head
+  .analitic
+  .clock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 65%;
+  text-decoration: none;
+}
+.main-fcontainer
+  .container-isi
+  .isi-right
+  .content-isi
+  .content-isi-1
+  .content-isi-1-head
+  .analitic
+  .visitor {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+.analitic .clock i,
+.visitor .ph {
+  color: #fb923c;
+  font-size: 18px;
+}
+
+.analitic .clock p {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+.visitor p {
+  font-size: 12px;
+  color: #a0a0a0;
+}
