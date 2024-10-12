@@ -1,21 +1,36 @@
 .main-fcontainer {
   display: grid;
   justify-content: center;
-  grid-template-columns: 90% auto;
+  grid-template-columns: 90%;
+  grid-template-rows: 120px;
+  position: relative;
+  height: 400vh;
 }
 
 .main-fcontainer .container-isi {
   display: grid;
-  grid-template-columns: 60% auto;
+  grid-template-columns: 64% auto;
   grid-template-rows: 50%;
   margin: 30px auto;
   column-gap: 5rem;
 }
-
+.main-fcontainer .container-isi .container-video iframe {
+  width: 345px;
+  height: 260px;
+}
 .main-fcontainer .container-isi .isi-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.main-fcontainer .container-ads {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.main-fcontainer .container-ads a img {
+  width: 970px;
+  height: 90px;
 }
 .main-fcontainer .container-isi .isi-container .isi-meta {
   display: flex;
@@ -135,6 +150,13 @@
 }
 .content-isi-1 .content-isi-1-head .content-isi-1-header a {
   color: black;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all;
+  transition-duration: 200ms;
+}
+.content-isi-1 .content-isi-1-head .content-isi-1-header a:hover {
+  color: #fb923c;
   text-decoration: none;
   font-weight: 700;
 }
