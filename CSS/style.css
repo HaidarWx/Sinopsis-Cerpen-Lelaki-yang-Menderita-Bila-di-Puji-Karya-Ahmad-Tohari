@@ -10,6 +10,8 @@ nav {
   align-items: center;
   background-color: rgb(255, 255, 255);
   padding: 0px 10px;
+  position: fixed;
+  width: 100%;
 }
 
 nav .container {
@@ -17,6 +19,7 @@ nav .container {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding-left: 1rem;
 }
 
 nav .container .logo-container {
@@ -107,6 +110,7 @@ nav .container .socialmedia-container a .github-icon .ph {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    padding-left: 0px;
   }
 
   nav .container .menu-container {

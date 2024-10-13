@@ -4,8 +4,11 @@
   grid-template-columns: 90%;
   grid-template-rows: auto 2fr auto auto;
   row-gap: 0rem;
+  padding-top: 5rem;
 }
-
+body {
+  position: relative;
+}
 .main-fcontainer .container-isi {
   display: grid;
   grid-template-columns: 64% auto;
@@ -29,6 +32,12 @@
 .main-fcontainer .container-ads a img {
   width: 970px;
   height: 90px;
+}
+.main-fcontainer .container-ads a .img-ads-phone {
+  display: none;
+}
+.main-fcontainer .container-ads a .img-ads-pc {
+  display: flex;
 }
 .main-fcontainer .container-isi .isi-container .meta-container {
   margin: 10px 0px;
@@ -73,6 +82,11 @@
   gap: 5px;
 }
 .isi-container .isi-head h1 {
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+  letter-spacing: -0.04em;
+  color: #212121;
 }
 
 .isi-meta-left .isi-meta-author img {
@@ -118,15 +132,68 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  gap: 1rem;
-  margin-top: 5px;
+  gap: 2rem;
+  margin-top: 1rem;
 }
-.isi-container .isi-konten p {
+.isi-container .isi-konten .isi-konten-paragraf {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.isi-container .isi-konten .isi-konten-paragraf p {
   font-size: 18px;
   line-height: 26px;
   color: #333333;
   font-weight: 500;
   font-family: "Segoe UI", sans-serif;
+  text-align: justify;
+}
+.isi-konten-paragraf .p-content-bottom a {
+  text-decoration: underline;
+  color: #fb923c;
+  vertical-align: baseline;
+  font: inherit;
+}
+.isi-container .isi-konten .isi-konten-paragraf .isi-konten-tags {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
+  clear: both;
+  gap: 1rem;
+}
+
+.isi-container .isi-konten .isi-konten-paragraf .isi-konten-tags span {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.isi-container .isi-konten .isi-konten-paragraf .isi-konten-tags a {
+  width: fit-content;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fbeaeb;
+  color: #e81c24;
+  border-radius: 3px;
+  transition: all;
+  transition-duration: 300ms;
+}
+.isi-container .isi-konten .isi-konten-paragraf .isi-konten-tags a:hover {
+  width: fit-content;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #e81c24;
+  color: #fbeaeb;
+  border-radius: 3px;
+}
+.isi-container
+  .isi-konten
+  .isi-konten-paragraf
+  .isi-konten-tags
+  .isi-konten-tags-list {
+  display: flex;
+  gap: 1rem;
 }
 .main-fcontainer .container-isi .isi-right .isi-right-heading {
   display: flex;
@@ -263,7 +330,7 @@
   .isi-container .isi-header {
     display: flex;
     justify-content: center;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
   }
 
   .isi-container .isi-header .isi-head {
@@ -290,8 +357,22 @@
     justify-content: center;
     margin-top: 15px;
   }
+  .main-fcontainer .container-ads a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main-fcontainer .container-ads a img {
-    width: 100%;
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .main-fcontainer .container-ads a .img-ads-phone {
+    display: flex;
+  }
+  .main-fcontainer .container-ads a .img-ads-pc {
+    display: none;
   }
   .main-fcontainer .container-isi .isi-container .meta-container .isi-meta {
     display: flex;
@@ -299,7 +380,7 @@
   }
 
   .main-fcontainer .container-isi .isi-container .meta-container {
-    width: 100%;
+    width: 95%;
     margin-bottom: 7px;
     display: flex;
     justify-content: center;
@@ -316,6 +397,7 @@
     .isi-meta-left {
     display: flex;
     width: 90%;
+    margin-bottom: 15px;
   }
 
   .main-fcontainer
@@ -341,9 +423,15 @@
   .isi-meta-category span {
     display: none;
   }
-  .isi-container .isi-head h1 {
-  }
 
+  .isi-container .isi-head h1 {
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 0 0 0.4em;
+    letter-spacing: -0.04em;
+    color: #212121;
+    text-align: left;
+  }
   .isi-meta-left .isi-meta-author img {
     width: 35px;
     height: 35px;
@@ -380,15 +468,16 @@
     display: flex;
     justify-content: center;
   }
-  .img {
+  .img-konten {
     width: 100%;
-    height: 12%;
+    height: 30vh;
   }
   .isi-konten {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
   .isi-konten-paragraf {
     display: flex;
@@ -396,7 +485,39 @@
     gap: 1rem;
     width: 95%;
   }
+  .isi-konten-paragraf p {
+    font-size: 16.5px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: justify;
+    vertical-align: baseline;
+    font: inherit;
+  }
+  .isi-konten-paragraf .p-content-bottom {
+    font-size: 16.5px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: justify;
+    font-style: italic;
+    vertical-align: baseline;
+    font: inherit;
+  }
+  .isi-konten-paragraf .p-content-bottom a {
+    text-decoration: underline;
+    color: #fb923c;
+    vertical-align: baseline;
+    font: inherit;
+  }
+  .main-fcontainer .container-isi .isi-right .content-isi {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .main-fcontainer .container-isi .isi-right .content-isi .content-isi-1 {
+    display: flex;
 
+    justify-content: center;
+  }
   .main-fcontainer .container-isi .container-video {
     display: none;
   }
@@ -407,5 +528,25 @@
     width: 100%;
     height: 85.8px;
     border-radius: 5px;
+  }
+  .isi-container .isi-konten .isi-konten-paragraf .isi-konten-tags a {
+    width: fit-content;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fbeaeb;
+    color: #e81c24;
+    border-radius: 3px;
+    transition: all;
+    transition-duration: 300ms;
+  }
+  .isi-container .isi-konten .isi-konten-paragraf .isi-konten-tags a:hover {
+    width: fit-content;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #e81c24;
+    color: #fbeaeb;
+    border-radius: 3px;
   }
 }
