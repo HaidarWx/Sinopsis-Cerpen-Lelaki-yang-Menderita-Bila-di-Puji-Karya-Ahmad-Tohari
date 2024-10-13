@@ -483,7 +483,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 95%;
+    width: 90%;
   }
   .isi-konten-paragraf p {
     font-size: 16.5px;
@@ -492,11 +492,12 @@ body {
     text-align: justify;
     vertical-align: baseline;
     font: inherit;
+    font-family: "Segoe UI", sans-serif;
   }
   .isi-konten-paragraf .p-content-bottom {
     font-size: 16.5px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: lighter;
     text-align: justify;
     font-style: italic;
     vertical-align: baseline;
