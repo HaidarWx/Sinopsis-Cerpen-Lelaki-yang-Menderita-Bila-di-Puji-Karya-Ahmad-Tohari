@@ -471,9 +471,9 @@ body {
     display: flex;
     justify-content: center;
   }
-  .img-konten {
+  .main-fcontainer .container-isi .isi-container .img-konten {
     width: 100%;
-    height: 30vh;
+    height: 50vw;
   }
   .isi-konten {
     display: flex;
@@ -496,6 +496,7 @@ body {
     vertical-align: baseline;
     font: inherit;
     font-family: "Segoe UI", sans-serif;
+    color: #333;
   }
   .isi-konten-paragraf .p-content-bottom {
     font-size: 16.5px;
@@ -754,5 +755,8 @@ body {
     border-radius: 3px;
     color: #212121;
     font-size: 11px;
+  }
+  .footer-box {
+    background-color: #212121;
   }
 }
