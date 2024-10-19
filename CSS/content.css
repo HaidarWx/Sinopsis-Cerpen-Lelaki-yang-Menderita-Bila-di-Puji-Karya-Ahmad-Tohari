@@ -827,7 +827,7 @@ body {
 
   .isi-postblog .isi-postblog-container {
     display: flex;
-    gap: 0rem;
+    gap: 1rem;
     flex-direction: column;
     margin-top: 20px;
   }
@@ -880,8 +880,8 @@ body {
     .postblog-isi
     .postblog-isi-1
     .postblog-image {
-    width: 60%;
-    height: 63%;
+    width: 65%;
+    height: 65%;
   }
   .isi-postblog
     .isi-postblog-container
@@ -890,9 +890,9 @@ body {
     .postblog-image
     a
     img {
-    width: 95%;
+    width: 100%;
     object-fit: cover;
-    height: 5.5rem;
+    height: 5.7rem;
     border-radius: 10px;
   }
   .isi-postblog
@@ -1073,6 +1073,7 @@ body {
     width: 90%;
     justify-content: center;
     gap: 1rem;
+    margin-top: 10px;
   }
   .isi-postblog .isi-postblog-container .loadmore-box a {
     text-decoration: none;
