@@ -17,7 +17,7 @@ body {
   column-gap: 5rem;
   grid-template-areas:
     "isi-container isi-right"
-    "isi-postblog isi-postblog";
+    "isi-postblog isi-right";
 }
 .main-fcontainer .container-isi .container-video iframe {
   width: 345px;
@@ -152,6 +152,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   text-align: justify;
 }
+
 .isi-konten-paragraf .p-content-bottom a {
   text-decoration: underline;
   color: #fb923c;
@@ -321,16 +322,257 @@ body {
 }
 
 .isi-postblog {
-  display: none;
-
+  display: flex;
   grid-area: isi-postblog;
 }
+
 .isi-postblog .isi-postblog-container {
   display: flex;
+  gap: 1rem;
   flex-direction: column;
-  width: 100%;
+  margin-top: 20px;
+}
+.isi-postblog .isi-postblog-container .postblog-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.isi-postblog .isi-postblog-container .postblog-isi .postblog-isi-1 {
+  display: flex;
+  gap: 2rem;
+}
+.isi-postblog .isi-postblog-container .postblog-heading {
+  display: flex;
 }
 
+.isi-postblog .isi-postblog-container .postblog-heading span {
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: bold;
+  width: 20%;
+}
+.isi-postblog .isi-postblog-container .postblog-heading .hr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.isi-postblog .isi-postblog-container .postblog-heading .hr hr {
+  width: 100%;
+  color: #eeeeee93;
+}
+.isi-postblog .postblog-heading span strong {
+  font-size: 16px;
+  line-height: 36px;
+  color: #fb923c;
+  font-weight: 700;
+  vertical-align: baseline;
+}
+.isi-postblog
+  .isi-postblog-container
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-image
+  a
+  img {
+  width: 260px;
+  object-fit: cover;
+  height: 185.9px;
+  border-radius: 10px;
+}
+.isi-postblog
+  .isi-postblog-container
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.isi-postblog
+  .isi-postblog-container
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-title
+  h3
+  a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 21px;
+}
+.isi-postblog
+  .isi-postblog-container
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.isi-postblog
+  .isi-postblog-container
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-meta
+  .postblog-meta-author
+  a {
+  font-size: 14px;
+}
+
+.isi-postblog .postblog-isi .postblog-isi-1 .postblog-isi-right .postblog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-author {
+  display: flex;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-author
+  a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #a0a0a0;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-author
+  a
+  span {
+  color: #fb923c;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-time {
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-time
+  a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-time
+  a
+  .ph {
+  color: #fb923c;
+  font-size: 10px;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta
+  .postblog-meta-time
+  a
+  span {
+  font-size: 10px;
+  color: #a0a0a0;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta-comment {
+  display: flex;
+  align-items: center;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta-comment
+  a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta-comment
+  a
+  .ph {
+  font-size: 10px;
+  color: #fb923c;
+}
+.isi-postblog
+  .postblog-isi
+  .postblog-isi-1
+  .postblog-isi-right
+  .postblog-meta-comment
+  a
+  span {
+  font-size: 10px;
+  color: #a0a0a0;
+}
+.isi-postblog .postblog-isi .postblog-isi-1 .postblog-excerpt {
+  line-height: 1.6;
+}
+.isi-postblog .postblog-isi .postblog-isi-1 .postblog-excerpt p {
+  font-size: 14px;
+  color: #53585c;
+  font-weight: 100;
+}
+.isi-postblog .isi-postblog-container .loadmore-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.isi-postblog .isi-postblog-container .loadmore-box a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30%;
+  height: 30px;
+  border: 1px solid rgba(175, 174, 174, 0.562);
+  border-radius: 3px;
+  color: #212121;
+  font-size: 11px;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.isi-postblog .isi-postblog-container .loadmore-box .hr {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.isi-postblog .isi-postblog-container .loadmore-box .hr hr {
+  width: 100%;
+  color: #eeeeee62;
+}
 @media only screen and (max-width: 768px) {
   .mains {
     display: grid;
@@ -371,7 +613,7 @@ body {
       "isi-right"
       "isi-postblog";
     margin: 30px auto;
-    column-gap: 5rem;
+    column-gap: 1rem;
   }
 
   .main-fcontainer .container-ads {
@@ -579,23 +821,53 @@ body {
 
   .isi-postblog {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+
     grid-area: isi-postblog;
-    align-items: center;
   }
+
   .isi-postblog .isi-postblog-container {
     display: flex;
-    width: 95%;
+    gap: 0rem;
     flex-direction: column;
-
-    padding: 5px;
-    gap: 2rem;
+    margin-top: 20px;
   }
+  .isi-postblog .isi-postblog-container .postblog-isi {
+    display: flex;
+    align-items: center;
+
+    gap: 7vh;
+  }
+  .isi-postblog .isi-postblog-container .postblog-isi .postblog-isi-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    gap: 1rem;
+    height: 15%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a0a0a0;
+  }
+  .isi-postblog .isi-postblog-container .postblog-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .isi-postblog .isi-postblog-container .postblog-heading span {
     font-size: 16px;
     line-height: 36px;
     font-weight: bold;
+    width: 30%;
+  }
+  .isi-postblog .isi-postblog-container .postblog-heading .hr {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .isi-postblog .isi-postblog-container .postblog-heading .hr hr {
+    width: 100%;
+    color: #eeeeee93;
   }
   .isi-postblog .postblog-heading span strong {
     font-size: 16px;
@@ -604,41 +876,68 @@ body {
     font-weight: 700;
     vertical-align: baseline;
   }
-
-  .isi-postblog .postblog-isi {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .isi-postblog .postblog-isi .postblog-isi-1 {
-    display: flex;
-    height: 6rem;
-  }
-  .isi-postblog .postblog-isi .postblog-isi-1 .postblog-isi-right {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  .isi-postblog
+    .isi-postblog-container
+    .postblog-isi
+    .postblog-isi-1
+    .postblog-image {
+    width: 68%;
   }
   .isi-postblog
+    .isi-postblog-container
+    .postblog-isi
+    .postblog-isi-1
+    .postblog-image
+    a
+    img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .isi-postblog
+    .isi-postblog-container
+    .postblog-isi
+    .postblog-isi-1
+    .postblog-isi-right {
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  .isi-postblog
+    .isi-postblog-container
     .postblog-isi
     .postblog-isi-1
     .postblog-isi-right
-    .postblog-title
-    h3 {
-    text-align: left;
-    font-size: 16px;
-    width: 99%;
+    .postblog-title {
+    width: 100%;
   }
+
   .isi-postblog
+    .isi-postblog-container
     .postblog-isi
     .postblog-isi-1
     .postblog-isi-right
     .postblog-title
     h3
     a {
-    color: #212121;
     text-decoration: none;
+    color: #212121;
+    font-size: 16px;
   }
+
+  .isi-postblog
+    .isi-postblog-container
+    .postblog-isi
+    .postblog-isi-1
+    .postblog-meta
+    .postblog-meta-author
+    a {
+    font-size: 14px;
+  }
+
   .isi-postblog
     .postblog-isi
     .postblog-isi-1
@@ -646,7 +945,7 @@ body {
     .postblog-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
   .isi-postblog
     .postblog-isi
@@ -677,6 +976,7 @@ body {
     span {
     color: #fb923c;
     font-weight: 700;
+    text-transform: uppercase;
   }
   .isi-postblog
     .postblog-isi
@@ -759,26 +1059,42 @@ body {
     font-size: 10px;
     color: #a0a0a0;
   }
-  .isi-postblog .postblog-isi .postblog-isi-1 .postblog-image {
+  .isi-postblog .postblog-isi .postblog-isi-1 .postblog-excerpt {
+    line-height: 1.6;
+    display: none;
   }
-  .isi-postblog .postblog-isi .postblog-isi-1 .postblog-image img {
-    height: 100%;
-    width: 9.5rem;
-    border-radius: 4px;
+  .isi-postblog .postblog-isi .postblog-isi-1 .postblog-excerpt p {
+    font-size: 14px;
+    color: #53585c;
+    font-weight: 100;
   }
   .isi-postblog .isi-postblog-container .loadmore-box {
     display: flex;
+    width: 90%;
     justify-content: center;
+    gap: 1rem;
   }
   .isi-postblog .isi-postblog-container .loadmore-box a {
     text-decoration: none;
-    padding: 6px 18px;
-    border: 2px solid rgba(175, 174, 174, 0.808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+    height: 30px;
+    border: 1px solid rgba(175, 174, 174, 0.562);
     border-radius: 3px;
     color: #212121;
     font-size: 11px;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
-  .footer-box {
-    background-color: #212121;
+  .isi-postblog .isi-postblog-container .loadmore-box .hr {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .isi-postblog .isi-postblog-container .loadmore-box .hr hr {
+    width: 100%;
+    color: #eeeeee62;
   }
 }
