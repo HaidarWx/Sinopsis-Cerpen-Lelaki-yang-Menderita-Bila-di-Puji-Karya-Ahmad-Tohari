@@ -12,9 +12,12 @@ body {
 .main-fcontainer .container-isi {
   display: grid;
   grid-template-columns: 64% auto;
-  grid-template-rows: 50%;
+  grid-template-rows: 1fr;
   margin: 30px auto;
   column-gap: 5rem;
+  grid-template-areas:
+    "isi-container isi-right"
+    "isi-postblog isi-postblog";
 }
 .main-fcontainer .container-isi .container-video iframe {
   width: 345px;
@@ -23,6 +26,7 @@ body {
 .main-fcontainer .container-isi .isi-container {
   display: flex;
   flex-direction: column;
+  grid-area: isi-container;
 }
 .main-fcontainer .container-ads {
   display: flex;
@@ -195,6 +199,12 @@ body {
   display: flex;
   gap: 1rem;
 }
+.main-fcontainer .container-isi .isi-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-area: isi-right;
+}
 .main-fcontainer .container-isi .isi-right .isi-right-heading {
   display: flex;
   align-items: center;
@@ -207,11 +217,7 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-.main-fcontainer .container-isi .isi-right {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+
 .main-fcontainer .container-isi .isi-right .content-isi {
   display: flex;
   flex-direction: column;
@@ -313,8 +319,16 @@ body {
   font-size: 12px;
   color: #a0a0a0;
 }
+
 .isi-postblog {
   display: none;
+
+  grid-area: isi-postblog;
+}
+.isi-postblog .isi-postblog-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -346,11 +360,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-area: isi-container;
   }
   .mains .main-fcontainer .container-isi {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 2fr auto;
+    grid-template-areas:
+      "isi-container"
+      "isi-right"
+      "isi-postblog";
     margin: 30px auto;
     column-gap: 5rem;
   }
@@ -513,6 +532,9 @@ body {
     vertical-align: baseline;
     font: inherit;
   }
+  .main-fcontainer .container-isi .isi-right {
+    grid-area: isi-right;
+  }
   .main-fcontainer .container-isi .isi-right .content-isi {
     display: none;
     align-items: center;
@@ -559,7 +581,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-
+    grid-area: isi-postblog;
     align-items: center;
   }
   .isi-postblog .isi-postblog-container {
