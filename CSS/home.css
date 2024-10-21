@@ -16,9 +16,10 @@
   width: 80%;
   height: 100%;
   display: grid;
-  margin-top: 10rem;
+  margin-top: 5rem;
   grid-template-columns: 50% auto;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 50% 20%;
+  grid-template-areas: "content-1 content-2";
   grid-gap: 4.5rem;
 }
 
@@ -28,12 +29,21 @@
   border-radius: 5px;
   box-shadow: 5px black;
   box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.103);
+  display: flex;
+  flex-direction: column;
+  grid-area: content-1;
+  height: 85%;
+  margin-top: 20px;
 }
-
-.main .container .content-1 img {
+.main .container .content-1 .image-content-1 {
   width: 100%;
   height: 70%;
+}
+.main .container .content-1 .image-content-1 img {
+  width: 100%;
+
   border-radius: 5px 5px 0px 0px;
+  height: 100%;
 }
 
 .content-1 .content-1-isi {
@@ -76,6 +86,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  grid-area: content-2;
 }
 
 .content-2 .card-content-2 {
@@ -264,15 +275,18 @@
     width: 90%;
     height: 100vh;
     display: grid;
-    margin-top: 30px;
+    margin-top: 70px;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    row-gap: auto;
+    grid-template-areas:
+      "content-1"
+      "content-2";
+    row-gap: 0;
   }
 
   .main .container .content-1 {
     width: 100%;
-    height: 19rem;
+    height: 75%;
     background-color: #fafafa;
     text-decoration: none;
     border-radius: 5px;
